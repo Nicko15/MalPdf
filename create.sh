@@ -8,3 +8,4 @@ msfconsole
   show options
   show info
   run
+  cd ..
