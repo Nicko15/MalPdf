@@ -14,3 +14,5 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
   sudo bash ./msfinstall
 git clone https://github.com/rapid7/metasploit-framework.git
 
+chmod +x create.sh
+chmod +x listen.sh
