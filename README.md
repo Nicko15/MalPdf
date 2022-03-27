@@ -29,6 +29,10 @@ All the needed packages and frameworks will be downloaded
 
 Now to create malicious pdf and use, run the 'create.sh'file by typing:
 
+$cd metasploit-framework
+
+$msfconsole
+
 $sudo bash create.sh
 
  You will get a file path and you can shere the file to your target
